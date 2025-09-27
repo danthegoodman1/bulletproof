@@ -1,4 +1,4 @@
-import { KV, KVTransaction } from "./interface.js"
+import { KV, KVTransaction } from "../kv.js"
 
 export class MemoryKV implements KV {
   private readonly store: Record<string, any> = {}
